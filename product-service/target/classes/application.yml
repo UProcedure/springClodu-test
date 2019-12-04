@@ -1,6 +1,11 @@
 spring:
   application:
     name: product-service
+  zipkin:
+    base-url: http://localhost:8876
+  sleuth:
+    sampler:
+      probability: 1.0
 ---
 spring:
   profiles: productService1
@@ -29,3 +34,8 @@ eureka:
 #    lease-renewal-interval-in-seconds: 30
 #    lease-expiration-duration-in-seconds: 90
 
+logging:
+  level:
+    root: info
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+    org.springframework.cloud.sleuth: DEBUG
