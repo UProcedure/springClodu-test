@@ -3,6 +3,8 @@ spring:
     name: product-service
   zipkin:
     base-url: http://localhost:8876
+    sender:
+      type: web
   sleuth:
     sampler:
       probability: 1.0

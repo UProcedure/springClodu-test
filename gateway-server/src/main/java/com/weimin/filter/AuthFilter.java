@@ -33,4 +33,5 @@ public class AuthFilter implements GlobalFilter, Ordered {
     public int getOrder() {
         return 0;
     }
+
 }

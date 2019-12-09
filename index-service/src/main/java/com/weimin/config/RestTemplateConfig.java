@@ -35,4 +35,6 @@ public class RestTemplateConfig {
 //        /**TODO 可用过滤策略。过滤掉故障和请求数超过阈值的服务实例，再从剩下的实例中轮询调用。*/
 //        //return new AvailabilityFilteringRule();
 //    }
+
+
 }
